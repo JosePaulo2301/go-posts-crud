@@ -1,0 +1,31 @@
+
+GET http://localhost:8080/posts
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/posts/1
+Content-Type: application/json
+
+###
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+    "Title": "Teste 2",
+    "Content": "Teste 2"
+}
+
+
+
+
+###
+PATCH  http://localhost:8080/posts/3
+
+{
+  "data": {
+    "id": 3,
+    "title": "Teste 3",
+    "content": "Teste 3"
+  }
+}
